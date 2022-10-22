@@ -109,21 +109,6 @@ header a:last-child:hover {
   }
 }
 
-@media screen and (max-width: 514px) {
-  header a:last-child:hover {
-    font-size: 25px;
-    width: 120px;
-    height: 27px;
-    font-weight: bold;
-    transition: all 0.6s ease;
-  }
-  section p + ul {
-    padding-left: 0em;
-  }
-  section p {
-    width: 100%;
-  }
-}
 /*****************
 SE ACABA CSS HEADER
 **************/
@@ -297,3 +282,19 @@ textarea {
 /*****************
 ACABA EL CSS MAIN
 **************/
+
+@media screen and (max-width: 514px) {
+  header a:last-child:hover {
+    font-size: 25px;
+    width: 120px;
+    height: 27px;
+    font-weight: bold;
+    transition: all 0.6s ease;
+  }
+  section p + ul {
+    padding-left: 0em;
+  }
+  section p {
+    width: 100%;
+  }
+}
