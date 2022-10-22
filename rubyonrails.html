@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>Artículo sobre Ruby - RubyOnRails</title>
+
+    <!--Metadatos de los documentos HTML5-->
+    <meta name="author" content="Jonathan Arias Busto" />
+    <meta
+      name="description"
+      content="Artículo sobre el lenguaje de programación Ruby"
+    />
+    <meta
+      name="keywords"
+      content="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas"
+    />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initia-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+  </head>
+
+  <body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+      <img src="multimedia/images/ruby_logo.png" alt="Ruby logo" />
+      <nav>
+        <a href="index.html" accesskey="R">Ruby</a>
+        <!-- <a href="versiones.html" accesskey="V">Versiones</a> -->
+        <a href="ejemplos.html" accesskey="j">Ejemplos prácticos</a>
+        <a>Ruby on Rails</a>
+        <a href="about.html" accesskey="A">Acerca de</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Ruby on Rails</h1>
+      <section>
+        <img src="multimedia/images/ruby_rails.png" alt="" />
+        <audio controls>
+          <source src="multimedia/audio/rubyonrails.mp4" type="audio/mp4" />
+        </audio>
+        <p>
+          Ruby on Rails, también conocido como RoR o Rails, es un framework de
+          aplicaciones web de código abierto escrito en el lenguaje de
+          programación Ruby, siguiendo el paradigma del patrón Modelo Vista
+          Controlador (MVC).<br /><br />La filosofía de Rails es la de "no
+          reinventar la rueda", por lo que se basa en las mejores prácticas de
+          desarrollo web.
+        </p>
+        <br />
+        <h3>Instalacion de Ruby on Rails</h3>
+        <p>
+          Usando la funcionalidad de gem aportado en la instalación base de Ruby
+          podemos instalar rails.
+        </p>
+        <!-- Código de ejemplo -->
+        <pre><code>$ gem install rails</code></pre>
+        <p>
+          Una vez instalado, podemos comprobar la versión de Rails que tenemos
+          instalada con el siguiente comando:
+        </p>
+        <pre><code>$ rails --version</code></pre>
+        <img src="multimedia/images/rails_version.png" alt="Versión de Rails" />
+        <h3>Creación de nuestra primera página</h3>
+        <p>
+          Para crear nuestra primera página web con Ruby on Rails, lo primero
+          que debemos hacer es crear un nuevo proyecto. Para ello, ejecutamos el
+          siguiente comando:
+        </p>
+        <pre><code>$ rails new [nombre_del_proyecto]
+$ rails new blog
+$ cd blog</code></pre>
+        <p>
+          Una vez creado el proyecto, podemos ejecutarlo con el siguiente
+          comando:
+        </p>
+        <pre><code>$ rails server
+$ ruby bin\rails server</code></pre>
+        <p>
+          Si todo ha ido bien, podremos acceder a nuestra página web en la
+          siguiente dirección:
+          <a href="http://localhost:3000">http://localhost:3000</a>
+        </p>
+        <img src="multimedia/images/rails_page.png" alt="Página de Rails" />
+        <p>
+          Para más información sobre Ruby on Rails, puedes visitar la página
+          <a
+            href="https://guides.rubyonrails.org/getting_started.html"
+            target="_blank"
+            >de ejemplo básico</a
+          >.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

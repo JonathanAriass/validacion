@@ -1,0 +1,154 @@
+/******************
+Jonathan Arias Busto - UO283586
+******************/
+body {
+  box-sizing: border-box;
+}
+
+/*Estilo para el contenedor header*/
+header {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+header img {
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 970px) {
+  header img {
+    padding-left: 13vw;
+    padding-right: 13vw;
+  }
+  header a:not(:last-child) {
+    padding-bottom: 1em;
+  }
+  header nav {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 1.5s ease;
+  }
+}
+
+/* No funciona cuando se hace grande el header preguntar*/
+/* @media screen and (min-width: 970px) {
+  header nav {
+    transition: all 1.5s ease;
+  }
+} */
+
+@media screen and (max-width: 514px) {
+  header a:last-child:hover {
+    width: 120px;
+    height: 27px;
+    transition: all 0.6s ease;
+  }
+}
+/*****************
+  SE ACABA CSS HEADER
+  **************/
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+h1 + section p:first-of-type {
+  padding-bottom: 2.5em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2.5em;
+  width: 90%;
+}
+
+section p {
+  text-align: left;
+  width: 60%;
+}
+section:first-of-type h2 + p {
+  font-size: 18px;
+  text-align: center;
+}
+
+video {
+  width: 60%;
+  min-width: 435px;
+  height: 45%;
+  min-height: 300px;
+  border-radius: 1.5em;
+}
+
+section ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+  padding-left: 7em;
+}
+
+section ul li {
+  padding-bottom: 1em;
+}
+
+main
+  section:nth-of-type(2)
+  ul:nth-of-type(1)
+  li:nth-of-type(3)
+  ul
+  li:first-of-type {
+  padding-top: 1em;
+}
+
+main
+  section:nth-of-type(2)
+  ul:nth-of-type(1)
+  li:nth-of-type(3)
+  ul
+  li:last-of-type {
+  padding-bottom: 0em;
+}
+pre {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+code {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  text-align: left;
+  border-radius: 3em;
+}
+
+section form {
+  width: 60%;
+}
