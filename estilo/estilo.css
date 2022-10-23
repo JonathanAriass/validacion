@@ -1,7 +1,7 @@
 /******************
 Jonathan Arias Busto - UO283586
 ******************/
-
+/*  especificidad 001 */
 body {
   background-color: #3b5982;
   color: white;
@@ -9,24 +9,31 @@ body {
   font-size: 18px;
 }
 
-/*Estilo para el contenedor header*/
+/*****************
+EMPIEZA CSS HEADER
+*****************/
+
+/*  especificidad 001 */
 header {
   background-color: #fbd3a2;
   overflow: hidden;
   border-radius: 3em;
 }
 
+/*  especificidad 002 */
 header a {
   text-decoration: none;
   color: black;
 }
 
+/*  especificidad 022 */
 header a:not(:last-child):hover {
   font-size: 2.5em;
   font-weight: bold;
   transition: all 0.6s ease;
 }
 
+/*  especificidad 012 */
 header a:last-child {
   background: #4e9caf;
   font-size: 1.1111111111111112em;
@@ -35,27 +42,30 @@ header a:last-child {
   font-weight: bold;
 }
 
+/*  especificidad 022 */
 header a:last-child:hover {
   font-size: 1.5em;
   transition: all 0.6s ease;
 }
 
 @media screen and (max-width: 1200px) {
+  /*  especificidad 022 */
   header a:not(:last-child):hover {
     font-size: 1.6em;
     font-weight: bold;
-    transition: all 0.6s ease;
   }
 }
 
 @media screen and (max-width: 970px) {
+  /*  especificidad 012 */
   header a:not(:last-child) {
     font-size: 0.9444444444444444em;
   }
+
+  /*  especificidad 022 */
   header a:not(:last-child):hover {
     font-size: 1.1111111111111112em;
     font-weight: bold;
-    transition: all 0.6s ease;
   }
 }
 
@@ -66,23 +76,27 @@ SE ACABA CSS HEADER
 /*****************
 EMPIEZA CSS MAIN
 **************/
-
+/*  especificidad 002 */
 main h1 {
   font-size: 3em;
 }
 
+/*  especificidad 002 */
 section p {
   text-align: left;
 }
 
+/*  especificidad 002 */
 p a {
   text-align: left;
 }
 
+/*  especificidad 001 */
 video {
   border-radius: 1.5em;
 }
 
+/*  especificidad 002 */
 pre code {
   background-color: #eee;
   border: 1px solid #999;
@@ -93,16 +107,19 @@ pre code {
   font-size: 1em;
 }
 
+/*  especificidad 001 */
 a {
   color: #fbd3a2;
 }
 
+/*  especificidad 001 */
 table,
 th,
 td {
   border: 0.06em solid;
 }
 
+/*  especificidad 001 */
 textarea {
   resize: none;
 }

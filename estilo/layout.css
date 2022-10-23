@@ -1,14 +1,18 @@
 /******************
 Jonathan Arias Busto - UO283586
 ******************/
-
+/*  especificidad 001 */
 body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
-/*Estilo para el contenedor header*/
+/*****************
+EMPIEZA CSS HEADER
+*****************/
+
+/*  especificidad 001 */
 header {
   margin-top: 2em;
   display: flex;
@@ -17,12 +21,14 @@ header {
   align-items: center;
 }
 
+/*  especificidad 002 */
 header img {
   padding-left: 7vw;
   width: 13.35em;
   height: auto;
 }
 
+/*  especificidad 002 */
 header nav {
   width: 100%;
   display: flex;
@@ -31,20 +37,25 @@ header nav {
   align-items: center;
 }
 
+/*  especificidad 012 */
 header a:last-child {
   display: block;
   padding: 0.6em;
   line-height: 1.4em;
 }
 
+/*  especificidad 022 */
 header a:last-child:hover {
   padding: 0.6em;
 }
 
 @media screen and (max-width: 970px) {
+  /*  especificidad 012 */
   header a:not(:last-child) {
     padding-bottom: 1em;
   }
+
+  /*  especificidad 002 */
   header nav {
     padding-top: 1.1em;
     padding-right: 1.1em;
@@ -61,6 +72,8 @@ SE ACABA CSS HEADER
 /*****************
 EMPIEZA CSS MAIN
 **************/
+
+/*  especificidad 001 */
 main {
   display: flex;
   flex-direction: column;
@@ -69,6 +82,7 @@ main {
   padding: 2em;
 }
 
+/*  especificidad 001 */
 section {
   display: flex;
   flex-direction: column;
@@ -78,19 +92,23 @@ section {
   width: 90%;
 }
 
+/*  especificidad 002 */
 section p {
   text-align: left;
   width: 65%;
 }
 
+/*  especificidad 013 */
 section:first-of-type h2 + p {
   text-align: center;
 }
 
+/*  especificidad 002 */
 p a {
   text-align: left;
 }
 
+/*  especificidad 002 */
 section img {
   display: block;
   max-width: 100%;
@@ -99,11 +117,13 @@ section img {
   height: auto;
 }
 
+/*  especificidad 001 */
 video {
   width: 60vw;
   height: auto;
 }
 
+/*  especificidad 002 */
 section ul {
   display: flex;
   flex-direction: column;
@@ -112,14 +132,17 @@ section ul {
   padding-left: 7em;
 }
 
+/*  especificidad 003 */
 section ul li {
   padding-bottom: 1em;
 }
 
+/*  especificidad 004 */
 section ul li ul {
   padding-left: 2em;
 }
 
+/*  especificidad 046 */
 main
   section:nth-of-type(2)
   ul:nth-of-type(1)
@@ -129,6 +152,7 @@ main
   padding-top: 1em;
 }
 
+/*  especificidad 046 */
 main
   section:nth-of-type(2)
   ul:nth-of-type(1)
@@ -138,6 +162,7 @@ main
   padding-top: 1em;
 }
 
+/*  especificidad 046 */
 main
   section:nth-of-type(2)
   ul:nth-of-type(1)
@@ -147,6 +172,7 @@ main
   padding-bottom: 0em;
 }
 
+/*  especificidad 046 */
 main
   section:nth-of-type(2)
   ul:nth-of-type(1)
@@ -156,34 +182,41 @@ main
   padding-bottom: 0em;
 }
 
+/*  especificidad 034 */
 main section:nth-of-type(3) ul:nth-of-type(2) li:nth-of-type(4) {
   padding-bottom: 0em;
 }
 
+/*  especificidad 002 */
 pre code {
   display: block;
   padding: 2em;
 }
 
+/*  especificidad 002 */
 section form {
   width: 60%;
 }
 
+/*  especificidad 001 */
 table {
   width: 60%;
   overflow: scroll;
 }
 
+/*  especificidad 002 */
 table caption {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
+/*  especificidad 001 */
 th,
 td {
   padding: 0.25em;
 }
 
+/*  especificidad 001 */
 textarea {
   width: 100%;
   height: 10em;
@@ -193,12 +226,17 @@ ACABA EL CSS MAIN
 **************/
 
 @media screen and (max-width: 514px) {
+  /*  especificidad 022 */
   header a:last-child:hover {
     transition: all 0.6s ease;
   }
+
+  /*  especificidad 003 */
   section p + ul {
     padding-left: 0em;
   }
+
+  /*  especificidad 002 */
   section p {
     width: 100%;
   }

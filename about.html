@@ -8,13 +8,10 @@
 
     <!--Metadatos de los documentos HTML5-->
     <meta name="author" content="Jonathan Arias Busto" />
-    <meta
-      name="description"
-      content="Artículo sobre el lenguaje de programación Ruby"
-    />
+    <meta name="description" content="Página de información" />
     <meta
       name="keywords"
-      content="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas"
+      content="opiniones, comentarios, información, web, desarrollo, web, html, css, javascript"
     />
 
     <!--Definición de la ventana gráfica-->
@@ -25,20 +22,18 @@
   </head>
 
   <body>
-    <!-- Datos con el contenidos que aparece en el navegador -->
     <header>
       <img src="multimedia/images/ruby_logo.png" alt="Ruby logo" />
       <nav>
         <a href="index.html" accesskey="R">Ruby</a>
-        <!-- <a href="versiones.html" accesskey="V">Versiones</a> -->
         <a href="ejemplos.html" accesskey="j">Ejemplos prácticos</a>
         <a href="rubyonrails.html" accesskey="u">Ruby on Rails</a>
         <a>Acerca de</a>
       </nav>
     </header>
     <main>
-      <h1>Acerca de</h1>
       <section>
+        <h1>Acerca de</h1>
         <p>
           Este sitio web ha sido creado por Jonathan Arias Busto (UO283586) para
           la asignatura de Software y Estándares Web del Grado en Ingeniería
@@ -58,17 +53,16 @@
             página web oficial de Ruby on Rails</a
           >.
         </p>
-        <!-- Pendiente de subir codigo a github y hacerlo publico. -->
-        <!-- <p>
+        <p>
           El código fuente de este sitio web se encuentra disponible en el
-          repositorio de GitHub.
-        </p> -->
+          <a href="https://github.com/JonathanAriass/validacion" target="_blank"
+            >repositorio de GitHub.</a
+          >
+        </p>
       </section>
       <section>
         <h2>Opiniones</h2>
         <form name="datos">
-          <!-- <fieldset>
-            <legend>Formulario de opiniones</legend> -->
           <p>
             <label for="nombre">Nombre:</label>
             <input
@@ -79,7 +73,7 @@
             />
           </p>
           <p>
-            <label for="apellido"> Apellido: </label>
+            <label for="apellido">Apellido:</label>
             <input
               id="apellido"
               type="text"
@@ -88,7 +82,7 @@
             />
           </p>
           <p>
-            <label for="email"> E-mail: </label>
+            <label for="email">E-mail:</label>
             <input
               id="email"
               type="email"
@@ -100,18 +94,20 @@
             <legend>¿Estas interesado en la temática?</legend>
             <p>
               <input id="interesado" type="radio" />
-              <label for="interesado"> Si, estoy interesado</label>
+              <label for="interesado">Si, estoy interesado</label>
             </p>
             <p>
               <input id="nointeresado" type="radio" />
               <label for="nointeresado">No me gusta esta temática</label>
             </p>
           </fieldset>
-          <p><label for="texto"> Comentarios (opcionales): </label></p>
-          <!-- Cambiar a textare { resize: none; } en el css-->
+          <p><label for="texto">Comentarios (opcionales):</label></p>
           <textarea id="texto" name="comentario" maxlength="1000"></textarea>
+          <p>
+            <input id="anonimo" type="checkbox" />
+            <label for="anonimo">Enviar de forma anónima:</label>
+          </p>
           <p><input type="submit" value="Enviar" /></p>
-          <!-- </fieldset> -->
         </form>
       </section>
     </main>
