@@ -52,7 +52,6 @@ header a:last-child:hover {
   /*  especificidad 022 */
   header a:not(:last-child):hover {
     font-size: 1.6em;
-    font-weight: bold;
   }
 }
 
@@ -65,7 +64,6 @@ header a:last-child:hover {
   /*  especificidad 022 */
   header a:not(:last-child):hover {
     font-size: 1.1111111111111112em;
-    font-weight: bold;
   }
 }
 
@@ -127,7 +125,6 @@ ACABA EL CSS MAIN
   /*  especificidad 022 */
   header a:not(:last-child):hover {
     font-size: 0.85em;
-    font-weight: bold;
   }
 
   /*  especificidad 022 */

@@ -197,9 +197,7 @@ table {
 
 /*  especificidad 001 */
 tr {
-  word-wrap: break-word;
-  /* white-space: pre-wrap; */
-  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 /*  especificidad 001 */
