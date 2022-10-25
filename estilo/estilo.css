@@ -81,16 +81,6 @@ main h1 {
   font-size: 3em;
 }
 
-/*  especificidad 002 */
-section p {
-  text-align: left;
-}
-
-/*  especificidad 002 */
-p a {
-  text-align: left;
-}
-
 /*  especificidad 001 */
 video {
   border-radius: 1.5em;
@@ -127,3 +117,26 @@ textarea {
 /*****************
 ACABA EL CSS MAIN
 **************/
+
+@media screen and (max-width: 514px) {
+  /*  especificidad 012 */
+  header a:not(:last-child) {
+    font-size: 0.8em;
+  }
+
+  /*  especificidad 022 */
+  header a:not(:last-child):hover {
+    font-size: 0.85em;
+    font-weight: bold;
+  }
+
+  /*  especificidad 022 */
+  header a:last-child:hover {
+    font-size: 1.1em;
+  }
+
+  /*  especificidad 002 */
+  pre code {
+    font-size: 0.65em;
+  }
+}
